@@ -1,0 +1,135 @@
+/* --- TAGS --- */
+
+body{
+  background-color: white;
+  font-family: "Arvo", cursive;
+  text-align: center;
+}
+
+h1{
+  color: #eb485d;
+  font-size: 3.2rem;
+  margin: 5% auto 0;
+  text-shadow: 3px 0 black;
+}
+
+h2{
+  margin: 0;
+}
+
+a{
+  color: #eb485d;
+  text-decoration: none;
+}
+
+img{
+  width: 70px;
+}
+
+footer {
+  font-size: 1rem;
+  color: black;
+}
+
+/* CLASSES */
+
+.music-notes{
+  display: block;
+  width: 20px;
+  visibility: hidden;
+}
+
+.music-notes-visible{ /* Animation */
+  display: block;
+  width: 20px;
+  visibility: visible;
+}
+
+.gi{ /* Doll - Footer */
+  width: 30px;
+}
+
+.icon{ /* Mouse and Keyboard Images */
+  font-size: 3rem;
+}
+
+.letters{ /* Above the Buttons */
+  display: flex;
+  flex-direction: row;
+}
+
+/* BUTTONS - BEGIN */
+  .b0 {
+    background-image: url(./images/0.png);
+    background-size: cover;
+  }
+
+  .b1 {
+    background-image: url(./images/1.png);
+    background-size: cover;
+  }
+
+  .b2 {
+    background-image: url(./images/2.png);
+    background-size: cover;
+  }
+
+  .b3 {
+    background-image: url(./images/3.png);
+    background-size: cover;
+  }
+
+  .b4 {
+    background-image: url(./images/4.png);
+    background-size: cover;
+  }
+
+  .b5 {
+    background-image: url(./images/5.png);
+    background-size: cover;
+  }
+
+  .b6 {
+    background-image: url(./images/6.png);
+    background-size: cover;
+  }
+
+  .drum {
+    background-color: transparent;
+    border-style: none;
+    border-image: none;
+    font-size: 0rem;
+    font-weight: 900;
+    color: black;
+    text-shadow: 3px 0 white;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 10px;
+    outline: 0px auto -webkit-focus-ring-color;
+  }
+
+  .pressed { /* Animation */
+    opacity: 0.5;
+  }
+/* BUTTONS - END */
+
+.grid-container {
+  margin: 5% 15%;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    margin: 5% 15%;
+
+    grid-template-columns: auto auto auto;
+  }
+
+  h2{
+    margin-top: 30px;
+  }
+}
